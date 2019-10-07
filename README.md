@@ -6,9 +6,11 @@ __Docker image for connecting to the Aberystwyth Univeristy VPN using openconnec
 
 The **abervpn** image allows you to connect the the GlobalProtect portal *via* openconnect. The image is mostly based on the standalone openconnect docker image, available [here](https://github.com/dlenski/openconnect)
 
+**Username** and your **OTP** (One-Time-Password) are passed as arguments to the docker command.
+
 
 #### To connect
 
 ```sh
-docker run -ti --rm --privileged --net=host --name vpn wilsontom/abervpn
+docker run -ti --rm --privileged --net=host --name vpn wilsontom/abervpn <USERNAME> <OTP>
 ```
