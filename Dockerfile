@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 RUN apt-get update
 
-RUN apt-get install -y \
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
     sudo \
     build-essential \
     gettext \
@@ -14,7 +14,8 @@ RUN apt-get install -y \
     vpnc-scripts \
     pkg-config \
     libgnutls28-dev \
-    git
+    git \
+    expect
 
 RUN git clone https://github.com/dlenski/openconnect.git
 WORKDIR /openconnect
