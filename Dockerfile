@@ -17,7 +17,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
     git \
     expect
 
-RUN git clone https://github.com/dlenski/openconnect.git
+RUN git clone https://github.com/openconnect/openconnect.git
 WORKDIR /openconnect
 RUN ./autogen.sh
 RUN ./configure
