@@ -33,7 +33,7 @@ jobs:
           run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       
         - name: Build image
-          run: docker build . --build-arg GITHUB_PAT=${{ secrets.GITHUB_TOKEN }} --file Dockerfile --tag analyst
+          run: docker build . --build-arg GITHUB_PAT=${{ secrets.GITHUB_TOKEN }} --file Dockerfile --tag abervpn
 
         - name: Push image
           run: |
