@@ -11,5 +11,5 @@ The **abervpn** image allows you to connect the the GlobalProtect portal *via* o
 #### To connect
 
 ```sh
-docker run -ti --rm --privileged --net=host --name vpn docker.pkg.github.com/wilsontom/abervpn/abervpn:latest <USERNAME> <PASSWORD> <OTP>
+docker run -ti --rm --privileged --net=host --name vpn ghcr.io/wilsontom/abervpn:latest <USERNAME> <PASSWORD> <OTP>
 ```
