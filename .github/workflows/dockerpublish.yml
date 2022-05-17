@@ -18,7 +18,7 @@ env:
   IMAGE_NAME: abervpn
 jobs:
   
-    analyst:
+    abervpn:
 
       runs-on: ubuntu-latest
       
